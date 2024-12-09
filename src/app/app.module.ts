@@ -5,16 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { CVComponent } from './components/cv/cv.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CreateUpdateComponent } from './components/cv/create-update/create-update.component';
+import { DeletComponent } from './components/cv/delet/delet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
-    CVComponent
+    CVComponent,
+    CreateUpdateComponent,
+    DeletComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
